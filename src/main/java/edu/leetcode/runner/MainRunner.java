@@ -4,12 +4,17 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import javax.swing.plaf.IconUIResource;
+<<<<<<< HEAD
 import java.util.Stack;
+=======
+import java.util.*;
+>>>>>>> fa7b6ea (...)
 
 @Component
 public class MainRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
+<<<<<<< HEAD
 //        int a = 'A';
 //        System.out.println("Char A = " + a);
 //        System.out.println("Char A - 64 = " + ('A' - 64));
@@ -31,6 +36,11 @@ public class MainRunner implements CommandLineRunner {
         }
 
         System.out.println("Finished");
+=======
+        Set<Character> set = new HashSet<>();
+        System.out.println( set.add('e'));
+        System.out.println( set.add('e'));
+>>>>>>> fa7b6ea (...)
     }
 
     public int getSqrtSumOfNumbers(int input) {
