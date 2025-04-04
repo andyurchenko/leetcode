@@ -2,9 +2,7 @@ package edu.leetcode.runner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import javax.swing.plaf.IconUIResource;
-import java.util.*;
+import java.util.Stack;
 
 @Component
 public class MainRunner implements CommandLineRunner {
