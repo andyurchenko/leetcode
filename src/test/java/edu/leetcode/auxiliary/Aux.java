@@ -112,7 +112,7 @@ public class Aux {
         return root;
     }
 
-    /*
+/*
             3
        9         20
               15    7
@@ -138,6 +138,63 @@ public class Aux {
 
         l_20_Right.left = l_15_Left;
         l_9_Left.right = l_7_Right;
+
+        return root;
+    }
+
+
+/**
+ *
+ *
+          1
+       /    \
+      2      3
+    /  \      \
+  4     5      8
+       / \    /
+      6   7  9
+
+
+ */
+
+    public static TreeNode getTree_5() {
+        TreeNode root = new TreeNode();
+        root.val = 1;
+
+        TreeNode l_2_Left = new TreeNode();
+        l_2_Left.val = 2;
+
+        TreeNode l_3_Right = new TreeNode();
+        l_3_Right.val = 3;
+
+        root.left = l_2_Left;
+        root.right = l_3_Right;
+
+        TreeNode l_4_Left = new TreeNode();
+        l_4_Left.val = 4;
+
+        TreeNode l_5_Right = new TreeNode();
+        l_5_Right.val = 5;
+
+        l_2_Left.left = l_4_Left;
+        l_2_Left.right = l_5_Right;
+
+        TreeNode l_6_Left = new TreeNode();
+        l_6_Left.val = 6;
+
+        TreeNode l_7_Right = new TreeNode();
+        l_7_Right.val = 7;
+        l_5_Right.left = l_6_Left;
+        l_5_Right.right = l_7_Right;
+
+        TreeNode l_8_Right = new TreeNode();
+        l_8_Right.val = 8;
+        l_3_Right.right = l_8_Right;
+
+        TreeNode l_9_Left = new TreeNode();
+        l_9_Left.val = 9;
+        l_8_Right.left = l_9_Left;
+
 
         return root;
     }
