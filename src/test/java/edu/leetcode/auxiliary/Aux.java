@@ -198,4 +198,63 @@ public class Aux {
 
         return root;
     }
+
+/**
+8 <- 7 <- 6 <- 5 <- 4 <- 3 <- 2 <- 1 -> null
+*/
+
+    public static TreeNode getTree_6() {
+        TreeNode root = new TreeNode();
+        root.val = 1;
+
+        TreeNode node = new TreeNode();
+        node.val = 2;
+        root.left = node;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 3;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 4;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 5;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 6;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 7;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 8;
+
+
+        return root;
+    }
+
+    /**
+     8 <- 7 <- 6 <- 5 <- 4 <- 3 <- 2 <- 1 -> null
+     */
+
+    public static TreeNode getTree_7() {
+        TreeNode root = new TreeNode();
+        root.val = 1;
+
+        TreeNode node = new TreeNode();
+        node.val = 2;
+        root.left = node;
+
+        node.left = new TreeNode();
+        node = node.left;
+        node.val = 3;
+
+        return root;
+    }
 }
