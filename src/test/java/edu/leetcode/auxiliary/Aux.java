@@ -137,7 +137,7 @@ public class Aux {
         l_7_Right.val = 7;
 
         l_20_Right.left = l_15_Left;
-        l_9_Left.right = l_7_Right;
+        l_20_Right.right = l_7_Right;
 
         return root;
     }
@@ -156,7 +156,6 @@ public class Aux {
 
 
  */
-
     public static TreeNode getTree_5() {
         TreeNode root = new TreeNode();
         root.val = 1;
