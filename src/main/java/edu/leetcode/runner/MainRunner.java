@@ -9,27 +9,7 @@ public class MainRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("1 % 100 = " + 1 % 100);
-//        int a = 'A';
-//        System.out.println("Char A = " + a);
-//        System.out.println("Char A - 64 = " + ('A' - 64));
-//        System.out.println("Char 25 + 64 = " + (char)(25 + 64));
-//        int BASE = 26;
-//        int value = 3;
-//        System.out.println(rec(703, 0, 0));
-        int input = 19;
-
-        Stack<Integer> stack = new Stack<>();
-        while (input != 0) {
-            stack.push(input % 10);
-
-            input /= 10;
-        }
-        int acc = 0;
-        for (Integer e : stack) {
-            acc += e * e;
-        }
-
-        System.out.println("Finished");
+        System.out.println(5 / 2);
     }
 
     public int getSqrtSumOfNumbers(int input) {
