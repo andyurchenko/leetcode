@@ -46,8 +46,8 @@ public class Aux {
 
 /*
           1
-       2     2
-      3 4   4 3
+       2     3
+      4 5   6 7
  */
     public static TreeNode getTree_2() {
         TreeNode root = new TreeNode();
@@ -57,25 +57,25 @@ public class Aux {
         l2Left.val = 2;
 
         TreeNode l2Right = new TreeNode();
-        l2Right.val = 2;
+        l2Right.val = 3;
 
         root.left = l2Left;
         root.right = l2Right;
 
         TreeNode l3Left = new TreeNode();
-        l3Left.val = 3;
+        l3Left.val = 4;
 
         TreeNode l4Right = new TreeNode();
-        l4Right.val = 4;
+        l4Right.val = 5;
 
         l2Left.left = l3Left;
         l2Left.right = l4Right;
 
         TreeNode l3Right = new TreeNode();
-        l3Right.val = 3;
+        l3Right.val = 6;
 
         TreeNode l4Left = new TreeNode();
-        l4Left.val = 4;
+        l4Left.val = 7;
 
         l2Right.left = l4Left;
         l2Right.right = l3Right;
